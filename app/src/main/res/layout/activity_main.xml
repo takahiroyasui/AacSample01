@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text=""
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:text="Hello World!" />
 
         <Button
             android:id="@+id/button1"
@@ -33,7 +34,8 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text="@{viewModel.text}"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:text="Hello World!" />
 
         <Button
             android:id="@+id/button2"
