@@ -5,11 +5,10 @@ import timber.log.Timber
 
 class MainActivityViewModel : ViewModel(), LifecycleObserver {
 
-    private var count = 0
-    val text : MutableLiveData<String> = MutableLiveData()
+    val text : MutableLiveData<Int> = MutableLiveData<Int>().apply { postValue(1000) }
 
     fun onClick() {
-        text.value = count++.toString()
+        text.value = text.value?.plus(1)
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
